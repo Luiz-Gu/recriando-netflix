@@ -1,0 +1,105 @@
+:root{ /*cria uma var pra elementos pre definidos*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+  /*elementos base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* define um elemento pra deixar um limite na caixa */
+}
+body{
+ background: var(--preta) ; /*usa um elemento pre definido*/
+ font-family: 'Arial', Times, serif; /*define fonte padrao*/
+color: white;
+}
+header .container{
+    display: flex; /*alinha pra linha*/
+    flex-direction: row;
+    align-items: center; /*alinha ao centro*/
+    justify-content: space-between; /* justfica na horizontal e da um spaço entre as tags */
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black',Times;
+    font-size: 40px;
+    
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #FFF;
+}
+
+/*serie principal*/
+.serie-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%)/*deixa a imagem um pouco com degrade*/, url('/imgs/thumb-1920-945730.png');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.serie-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+.serie-principal .titulo{
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;   /*fala pra quando o mause passar pelo elemento o cursor muda*/
+    transition: .3s ease all; /*cria uma animação basica*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+.serie-principal .container{
+    width: 70%;
+}
+
+.box-serie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-fime{
+    margin-top: 5px;
+}
